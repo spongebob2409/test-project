@@ -27,3 +27,18 @@ const NewPassword = () => {
                         <input
                             type="password"
                             placeholder="Enter new password"
+                            autoComplete="off"
+                            name="newPassword"
+                            className="form-control rounded-8"
+                            onChange={(e) => setNewPassword(e.target.value)} />
+                    </div>
+                    <button type="submit" className="btn btn-success w-100 rounded-0">
+                        Update Password
+                    </button>
+                </form>
+            </div>
+        </div>
+    );
+};
+
+export default NewPassword;
